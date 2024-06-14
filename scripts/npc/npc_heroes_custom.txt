@@ -1,0 +1,231 @@
+"DOTAHeroes"
+{
+	//=================================================================================================================
+	// Сила
+	//=================================================================================================================	
+
+	"npc_dota_hero_alchemist"
+	{	
+		"Ability9"					"alchemist_hand_of_midas"
+	}
+
+	"npc_dota_hero_axe"
+	{	
+		"Ability9"					"alliance_brawny_bonus"
+	}
+
+	"npc_dota_hero_centaur"
+	{	
+		"Ability9"					"alliance_brawny_bonus"
+	}
+
+	"npc_dota_hero_beastmaster"
+	{	
+		"Ability9"					"alliance_brawny_bonus"
+	}
+
+	"npc_dota_hero_bristleback"
+	{	
+		"Ability9"					"alliance_brawny_bonus"
+	}
+
+	"npc_dota_hero_legion_commander"
+	{	
+		"Ability9"					"alliance_champion_bonus"
+	}
+
+	"npc_dota_hero_slardar"
+	{	
+		"Ability9"					"alliance_depths_bonus"
+	}
+
+	"npc_dota_hero_sven"
+	{	
+		"Ability9"					"alliance_assassin_bonus"
+	}
+
+	"npc_dota_hero_night_stalker"
+	{	
+		"Ability9"					"alliance_assassin_bonus"
+	}
+
+	"npc_dota_hero_treant"
+	{	
+		"Ability9"					"alliance_you_shall_not_pass"
+	}
+
+	"npc_dota_hero_ogre_magi"
+	{	
+		"Ability9"					"alliance_you_shall_not_pass"
+	}
+
+	"npc_dota_hero_pudge"
+	{	
+		"Ability8"					"agility_heap"
+		"Ability9"					"intellect_heap"
+	}
+
+	"npc_dota_hero_earth_spirit"
+	{	
+		"Ability8"					"alliance_instant_teleport_to_ally"
+		"Ability9"					"attribute_switch_ability"	
+	}
+
+	//=================================================================================================================	
+	// Ловкость
+	//=================================================================================================================
+	
+
+	"npc_dota_hero_drow_ranger"
+	{				
+		"Ability4"					"drow_ranger_glacier"									
+		"Ability9"					"Drow_Ranger_Windranger_bonus"	
+	}
+
+	"npc_dota_hero_antimage"
+	{										
+		"Ability9"					"alliance_demon_hunter_bonus"	
+	}
+
+	"npc_dota_hero_terrorblade"
+	{												
+		"Ability9"					"alliance_demon_hunter_bonus"	
+	}
+
+	"npc_dota_hero_bounty_hunter"
+	{												
+		"Ability9"					"alchemist_hand_of_midas"	
+	}
+
+	"npc_dota_hero_slark"
+	{												
+		"Ability9"					"alliance_depths_bonus"	
+	}
+
+	"npc_dota_hero_medusa"
+	{												
+		"Ability9"					"alliance_depths_bonus"	
+	}
+
+
+	"npc_dota_hero_morphling"
+	{												
+		"Ability9"					"alliance_depths_bonus"	
+	}
+
+	"npc_dota_hero_phantom_assassin"
+	{												
+		"Ability9"					"alliance_assassin_bonus"	
+	}
+
+	"npc_dota_hero_juggernaut"
+	{												
+		"Ability8"					"alliance_brawny_bonus"	
+		"Ability9"					"alliance_assassin_bonus"	
+	}
+
+	"npc_dota_hero_monkey_king"
+	{												
+		"Ability9"					"alliance_assassin_bonus"	
+	}
+
+	"npc_dota_hero_bloodseeker"
+	{												
+		"Ability9"					"alliance_assassin_bonus"	
+	}
+
+	"npc_dota_hero_faceless_void"
+	{												
+		"Ability9"					"alliance_assassin_bonus"	
+		"Ability5"					"alliance_time_stop"	
+	}
+
+	"npc_dota_hero_riki"
+	{												
+		"Ability9"					"alliance_assassin_bonus"	
+	}
+
+	"npc_dota_hero_troll_warlord"
+	{												
+		"Ability9"					"alliance_assassin_bonus"	
+	}
+
+	"npc_dota_hero_ember_spirit"
+	{												
+		"Ability8"					"alliance_instant_teleport_to_ally"
+		"Ability9"					"attribute_switch_ability"	
+	}
+
+
+	//=================================================================================================================	
+	// Интелект
+	//=================================================================================================================
+
+	"npc_dota_hero_rubick"
+	{												
+		"Ability9"					"alliance_archmages_bonus"	
+	}
+
+	"npc_dota_hero_obsidian_destroyer"
+	{												
+		"Ability9"					"alliance_archmages_bonus"	
+	}
+
+	"npc_dota_hero_silencer"
+	{												
+		"Ability9"					"alliance_archmages_bonus"	
+	}
+
+	"npc_dota_hero_warlock"
+	{												
+		"Ability9"					"alliance_warlock_supremacy_bonus"	
+	}
+
+	"npc_dota_hero_lich"
+	{	
+		"Ability9"					"alliance_you_shall_not_pass"
+	}
+
+	"npc_dota_hero_disruptor"
+	{	
+		"Ability9"					"alliance_brawny_bonus"
+	}
+
+	"npc_dota_hero_storm_spirit"
+	{	
+		"Ability8"					"alliance_instant_teleport_to_ally"
+		"Ability9"					"attribute_switch_ability"
+	}
+
+
+	//=================================================================================================================
+	// Универсалы
+	//=================================================================================================================
+
+	"npc_dota_hero_windrunner"
+	{	
+		"Ability9"					"Drow_Ranger_Windranger_bonus"	
+	}
+
+	"npc_dota_hero_invoker"
+	{	
+		"Ability21"					"alliance_archmages_bonus"	
+	}
+
+	"npc_dota_hero_pangolier"
+	{	
+		"Ability9"					"alliance_assassin_bonus"	
+	}
+
+	"npc_dota_hero_snapfire"
+	{	
+		"Ability9"					"alliance_brawny_bonus"	
+	}
+
+	"npc_dota_hero_void_spirit"
+	{	
+		"Ability8"					"alliance_instant_teleport_to_ally"
+		"Ability9"					"attribute_switch_ability"
+	}
+	
+}

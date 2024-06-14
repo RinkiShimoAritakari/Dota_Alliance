@@ -1,0 +1,272 @@
+"DOTAAbilities"
+{	
+
+
+	//=========================================================Rod of Atos===========================================
+    "item_rod_of_atos"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+        "FightRecapLevel"               "1"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
+        "AbilitySharedCooldown"         "atos"
+
+        // Stats        
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "18"
+        "AbilityCastRange"              "1100"
+        "AbilityCastPoint"              "0.0"
+
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "50"
+        "ItemCost"                      "2250"
+        "ItemShopTags"                  "int;regen_health"
+        "ItemQuality"                   "rare"
+        "ItemAliases"                   "rod of atos"
+        "ItemDeclarations"              "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+        "ShouldBeSuggested"             "1"
+        
+        // Special  
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {       
+                "bonus_intellect"       "15"
+                "bonus_hp"              "300"
+                "duration"              "2.0"
+        }
+    }
+
+    //=========================================================Rod of Porthos===========================================
+    "item_recipe_rod_of_porthos"
+    {
+        // General
+        "BaseClass"                     "item_datadriven"
+        "AbilityTextureName"                "recipe"
+        //-------------------------------------------------------------------------------------------------------------
+        
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCost"                      "450"   
+        "ItemShopTags"                  ""
+        
+        // Recipe
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemRecipe"                    "1"
+        "ItemResult"                    "item_rod_of_porthos"
+        "ItemRequirements"
+        {
+            "01"                        "item_ogre_axe;item_energy_booster;"
+        }
+    }
+    
+  
+    "item_rod_of_porthos"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "item_rod_of_atos"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+        "FightRecapLevel"               "1"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
+        "AbilitySharedCooldown"         "atos"
+
+        "AbilityTextureName"            "rod_of_porthos_icon"
+
+        // Stats        
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "18"
+        "AbilityCastRange"              "1100"
+        "AbilityCastPoint"              "0.0"
+
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "50"
+        "ItemCost"                      "2250"
+        "ItemShopTags"                  "int;regen_health"
+        "ItemQuality"                   "rare"
+        "ItemAliases"                   "rod of atos"
+        "ItemDeclarations"              "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+        "ShouldBeSuggested"             "1"
+        
+        // Special  
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {       
+                "bonus_strength"        "15"
+                "bonus_intellect"       "10"
+                "duration"              "2.0"
+        }
+    }
+
+    //=========================================================Rod of Aramis===========================================
+    "item_recipe_rod_of_aramis"
+    {
+        // General
+        "BaseClass"                     "item_datadriven"
+        "AbilityTextureName"            "recipe"
+        //-------------------------------------------------------------------------------------------------------------
+        
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCost"                      "50"   
+        "ItemShopTags"                  ""
+        
+        // Recipe
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemRecipe"                    "1"
+        "ItemResult"                    "item_rod_of_aramis"
+        "ItemRequirements"
+        {
+            "01"                        "item_blade_of_alacrity;item_point_booster;"
+        }
+    }
+    
+  
+    "item_rod_of_aramis"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "item_rod_of_atos"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+        "FightRecapLevel"               "1"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
+        "AbilitySharedCooldown"         "atos"
+
+        "AbilityTextureName"            "rod_of_aramis_icon"
+
+        // Stats        
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "18"
+        "AbilityCastRange"              "1100"
+        "AbilityCastPoint"              "0.0"
+
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "50"
+        "ItemCost"                      "2250"
+        "ItemShopTags"                  "int;regen_health"
+        "ItemQuality"                   "rare"
+        "ItemAliases"                   "rod of atos"
+        "ItemDeclarations"              "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+        "ShouldBeSuggested"             "1"
+        
+        // Special  
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {       
+                "bonus_agility"         "15"
+                "bonus_strength"        "5"
+                "bonus_intellect"       "5"
+                "duration"              "2.0"
+        }
+    }
+
+
+    //=========================================================Rod of d'Artagnan===========================================
+    "item_recipe_rod_of_d_artagnan"
+    {
+        // General
+        "BaseClass"                     "item_datadriven"
+        "AbilityTextureName"            "recipe"
+        //-------------------------------------------------------------------------------------------------------------
+        
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCost"                      "50"   
+        "ItemShopTags"                  ""
+        
+        // Recipe
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemRecipe"                    "1"
+        "ItemResult"                    "item_rod_of_d_artagnan"
+        "ItemRequirements"
+        {
+            "01"                        "item_diadem;item_cornucopia;"
+        }
+    }
+      
+    "item_rod_of_d_artagnan"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "item_rod_of_atos"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+        "FightRecapLevel"               "1"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
+        "AbilitySharedCooldown"         "atos"
+
+        "AbilityTextureName"            "rod_of_d_artagnan_icon"
+
+        // Stats        
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "18"
+        "AbilityCastRange"              "1100"
+        "AbilityCastPoint"              "0.0"
+
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "50"
+        "ItemCost"                      "2250"
+        "ItemShopTags"                  "int;regen_health"
+        "ItemQuality"                   "rare"
+        "ItemAliases"                   "rod of atos"
+        "ItemDeclarations"              "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+        "ShouldBeSuggested"             "1"
+        
+        // Special  
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {       
+                "bonus_strength"        "7"
+                "bonus_agility"         "7"
+                "bonus_intellect"       "7"
+                "hp_regen"              "5"
+                "mana_regen"            "2"
+                "mana_regen"            "2"
+                "bonus_damage"          "7"
+                "duration"              "2.0"
+        }
+    }
+
+    //=================================================================================================================
+    "item_divine_barrage"
+    {
+        "ID"                            "1001" // Уникальный ID предмета
+        "BaseClass"                     "item_lua"
+        "ScriptFile"                    "items/divine_barrage.lua"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"            "divine_barrage"
+        "ItemCost"                      "4200"
+        "ItemShopTags"                  "item_greater_crit;item_monkey_king_bar"
+        "ItemQuality"                   "epic"
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "crit_chance"           "25" // Шанс критического удара в процентах
+            }
+            "02"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "crit_multiplier"       "300" // Множитель критического удара в процентах
+            }
+        }
+    }
+
+
+}

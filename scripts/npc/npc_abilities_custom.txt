@@ -1,0 +1,433 @@
+// Dota Heroes File
+"DOTAAbilities"
+{
+	"Version"		"1"
+	
+	//==============================================================ALLIANCE======================================================
+	
+	//======================================================Drow Ranger + Windranger =============================================
+	"Drow_Ranger_Windranger_bonus"
+	{
+		"ID"							"8700"
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/Drow_Ranger_Windranger_bonus"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+
+		"AbilityTexturename"			"Drow_Ranger_Windranger_bonus"
+
+		"MaxLevel"						"2"
+		//"Innate"                        "1"
+		"RequiredLevel"                 "1"
+
+		"AbilityValues"
+		{
+			"bonus_damage"				"50 200"
+			"bonus_magical_resistance"	"10 20"
+			"bonus_evasion"				"10 20"
+		}
+	}
+
+	//======================================================Hunter======================================================
+
+	"Alliance_Hunter_bonus"
+	{
+		"ID"							"8701"
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/Alliance_Hunter_bonus"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+
+		"AbilityTexturename"			"Alliance_Hunter_bonus"
+
+		"MaxLevel"						"5"
+		//"Innate"                        "1"
+		"RequiredLevel"                 "1"
+
+		"AbilityValues"
+		{
+			"bonus_damage_pure"						"10 20 35 50 70"
+			"bonus_base_attack_time"				"1.6 1.6 1.5 1.4 1.2"
+		}
+	}
+
+	//======================================================Forester======================================================
+	"Alliance_Forester_bonus"
+	{
+		"ID"							"8702"
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/Alliance_Forester_bonus"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		"AbilityTexturename"			"Alliance_Forester_bonus"
+
+		"MaxLevel"						"5"
+		//"Innate"                        "1"
+		"RequiredLevel"                 "1"
+
+		"AbilityValues"
+		{
+			"bonus_attack_range"					"30 60 100 150 225"
+			"cleave_damage_per_kill"				"5"
+			"cleave_starting_width"					"150"
+			"cleave_ending_width"					"250"
+			"cleave_distance"						"700"
+		}
+	}
+
+	//======================================================Alchemist + Bounty Hunter=============================================
+    "alchemist_hand_of_midas"
+    {	
+    	"ID"								"8703"
+        "BaseClass"						    "ability_lua"
+        "ScriptFile"                        "abilities/alchemist_hand_of_midas"
+		"AbilityBehavior"				    "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+
+        "AbilityChannelTime"			    "3"
+        "AbilityTextureName"                "alchemist_hand_of_midas"
+        "AbilityCooldown"                   "100 70"
+        "AbilityCastRange"                  "600"
+
+		"MaxLevel"						"2"
+		//"Innate"                        "1"
+		"RequiredLevel"                 "1"
+
+		"AbilityValues"
+		{
+            "gold"                          "160"
+            "exp"                           "2.1"
+            "radius"                        "200"   
+		}
+    }
+
+	//======================================================Brawny======================================================
+	"alliance_brawny_bonus"
+	{
+		"ID"							"8704"
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/alliance_brawny_bonus"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+
+		"AbilityTexturename"			"Alliance_Brawny_bonus"
+		
+		"MaxLevel"						"5"
+		//"Innate"                        "1"
+		"RequiredLevel"                 "1"
+
+		"AbilityValues"
+		{
+			"bonus_health_per_kill"					"20 40 80 160 320"
+		}
+	}
+
+	//======================================================Demon Hunter======================================================
+	"alliance_demon_hunter_bonus"
+	{
+		"ID"							"8705"
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/alliance_demon_hunter_bonus"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_SKIP_FOR_KEYBINDS | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+
+		"AbilityTexturename"			"alliance_demon_hunter_bonus"
+		
+		"MaxLevel"						"2"
+		//"Innate"                        "1"
+		"RequiredLevel"                 "1"
+
+		"AbilityValues"
+		{
+			"soul_damage"						"0.2 0.4"
+		}
+	}
+
+	//======================================================Champion======================================================
+	"alliance_champion_bonus"
+	{
+		"ID"							"8706"
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/alliance_champion_bonus"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_SKIP_FOR_KEYBINDS | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+
+		"AbilityTexturename"			"alliance_champion_bonus"
+
+		"MaxLevel"						"1"
+		//"Innate"                        "1"
+		"RequiredLevel"                 "1"
+
+		"AbilityValues"
+		{
+			"strength_bonus_per_kill"							"1"
+			"agility_bonus_per_kill"							"1"		
+			"intelligence_bonus_per_kill"						"1"		
+			"attak_range_bonus_per_kill"						"5"		
+			"movespeed_bonus_per_kill"							"3"		
+			"mana_regen_bonus_per_kill"							"1"		
+		}
+	}
+
+	//======================================================Mage======================================================
+	"alliance_mage_bonus"
+	{
+		"ID"							"8707"
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/alliance_mage_bonus"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_SKIP_FOR_KEYBINDS | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+
+		"AbilityTexturename"			"alliance_mage_bonus"
+
+		"MaxLevel"						"4"
+		//"Innate"                        "1"
+		"RequiredLevel"                 "1"
+
+		"AbilityValues"
+		{	
+			"intelligence_bonus"						"10 15 20 25 40"			
+			"cooldown_reduction_bonus"					"5 10 15 20 30"		
+			"spell_amplify_bonus"						"5 10 15 20 30"		
+			"cast_range_bonus"							"50 75 100 125 175"		
+		}
+	}	
+
+	//======================================================Depths======================================================
+	"alliance_depths_bonus"
+	{
+		"ID"							"8708"
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/alliance_depths_bonus"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+
+		"AbilityTexturename"			"alliance_depths_bonus"
+
+		"MaxLevel"						"4"
+		//"Innate"                        "1"
+		"RequiredLevel"                 "1"
+
+		"AbilityValues"
+		{	
+			"magical_resistance_bonus"						"15 30 45 60"			
+		}
+	}
+
+	//======================================================Warlock Supremacy====================================================
+	"alliance_warlock_supremacy_bonus"
+	{
+		"ID"							"8709"
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/alliance_warlock_supremacy_bonus"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+
+		"AbilityTexturename"			"alliance_warlock_supremacy_bonus"
+
+		"MaxLevel"						"1"
+		//"Innate"                        "1"
+		"RequiredLevel"                 "1"
+
+		"AbilityValues"
+		{	
+			"intelligence_bonus"						"15"			
+		}
+	}
+
+	//======================================================Archmages======================================================
+	"alliance_archmages_bonus"
+	{
+		"ID"							"8710"
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/alliance_archmages_bonus"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_SKIP_FOR_KEYBINDS | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+
+		"AbilityTexturename"			"alliance_archmages_bonus"
+
+		"MaxLevel"						"4"
+		//"Innate"                        "1"
+		"RequiredLevel"                 "1"
+
+		"AbilityValues"
+		{	
+			"intelligence_bonus"						"2 3 4 5"			
+			"chance"									"5 7 9 11"
+			"ultra_intelligence_bonus"					"7 14 21 30"			
+			"ultra_chance"		     					"1"
+		}
+	}
+
+	//======================================================Assassin======================================================
+    "alliance_assassin_bonus"
+    {	
+    	"ID"							"8711"
+        "BaseClass"                     "ability_lua"
+        "ScriptFile" 					"abilities/alliance_assassin_bonus"
+        "AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+        "AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_SKIP_FOR_KEYBINDS | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+
+		"AbilityTexturename"			"alliance_assassin_bonus"
+
+		"MaxLevel"						"5"
+		//"Innate"                        "1"
+		"RequiredLevel"                 "1"
+
+		"AbilityValues"
+		{	
+			"crit_chance"								"25"			
+			"crit_mult"									"1"
+			"crit_damage"								"200 250 300 350 450"
+		}
+    }
+    
+    //======================================================Time stop======================================================
+    "alliance_time_stop"
+    {	
+   		"ID"							"8712"
+        "BaseClass"                     "faceless_void_chronosphere"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+
+        "AbilityTextureName"            "alliance_time_stop"
+
+        "MaxLevel"						"1"
+		//"Innate"                        "1"
+		"RequiredLevel"                 "1"
+
+		"AbilityCastRange"				"5000"
+        "AbilityManaCost"               "600"
+        "AbilityCastPoint"              "0.3"
+        "AbilityCooldown"               "70"
+
+		"AbilityValues"
+		{
+			"radius"				
+			{
+				"value"				"9900"
+			}
+			"duration"				"10"
+        }
+    }
+    
+    //======================================================You shall not pass (Ты не пройдёшь)=============================
+    "alliance_you_shall_not_pass"
+    {	
+   		"ID"							"8713"
+        "BaseClass"                     "ability_lua"
+        "ScriptFile" 					"abilities/alliance_you_shall_not_pass"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+        "AbilityUnitTargetTeam" 		"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+        "AbilityUnitTargetType" 		"DOTA_UNIT_TARGET_BUILDING"
+
+        "AbilityTextureName"            "alliance_you_shall_not_pass"
+
+        "MaxLevel"						"3"
+		//"Innate"                        "1"
+		"RequiredLevel"                 "1"
+
+		"AbilityCastRange"				"700 850 1000"
+        "AbilityManaCost"               "70 150 200"
+        "AbilityCooldown"               "30"
+
+		"AbilityValues"
+		{			
+			"duration"									"15"
+			"attack_speed_bonus"						"30 65 110"
+			"armor_bonus"								"5 10 15"
+		}
+    }
+
+    //======================================================Attribute Change (Смена атрибута)=============================
+	"attribute_switch_ability"
+    {
+   		"ID"							"8714"
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "abilities/attribute_switch_ability/attribute_switch_ability.lua"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+
+        "AbilityTextureName"            "attribute_switch_ability"
+
+        "MaxLevel"						"1"
+		//"Innate"                        "1" 
+		"RequiredLevel"                 "1"
+
+        "AbilityCooldown"               "40"
+
+        "AbilityValues"
+        {
+            "str_magical_resistance"     				"0.3"
+            "agi_evasion"     							"0.3"
+            "int_cooldown_reduction"    				"0.3"
+            "all_attr"      							"50"
+        }
+    }
+
+	//======================================================Спириты телепорт==============================================
+    "alliance_instant_teleport_to_ally"
+    {	
+    	"ID"							"8715"
+        "BaseClass"                     "ability_lua"
+        "ScriptFile" 					"abilities/alliance_instant_teleport_to_ally"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+        "AbilityUnitTargetTeam" 		"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+        "AbilityUnitTargetType" 		"DOTA_UNIT_TARGET_HERO"
+
+		"AbilityCastRange"      		"99999"
+		"AbilityCastPoint"      		"0.0"
+		"AbilityCooldown"       		"20"
+		"AbilityManaCost"       		"100"
+
+		"AbilityTexturename"			"alliance_instant_teleport_to_ally"
+
+		"MaxLevel"						"1"
+		//"Innate"                        "1"
+		"RequiredLevel"                 "1"
+    }
+
+	//======================================================intellect/agility heap==============================================
+    "intellect_heap"
+    {	
+    	"ID"							"8716"
+        "BaseClass"                     "ability_lua"
+        "ScriptFile" 					"abilities/Pudge_heap/intellect_heap"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityTexturename"			"intellect_heap"
+
+		"MaxLevel"						"4"
+		//"Innate"                        "1"
+		"RequiredLevel"                 "1"
+
+		"AbilityValues"
+        {
+            "intellect_per_stack"     				"1.4 1.6 1.8 2"
+        }
+    }
+
+    "agility_heap"
+    {	
+    	"ID"							"8717"
+        "BaseClass"                     "ability_lua"
+        "ScriptFile" 					"abilities/Pudge_heap/agility_heap"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilityTexturename"			"agility_heap"
+
+		"MaxLevel"						"4"
+		//"Innate"                        "1"
+		"RequiredLevel"                 "1"
+
+		"AbilityValues"
+        {
+            "agility_per_stack"     				"1.4 1.6 1.8 2"
+        }
+    }
+
+
+
+
+}
+
+
