@@ -243,14 +243,35 @@
     }
 
     //=================================================================================================================
+    "item_recipe_divine_barrage"
+    {
+        "BaseClass"                     "item_datadriven"
+        "AbilityTextureName"            "recipe"
+
+        //-------------------------------------------------------------------------------------------------------------
+        
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCost"                      "1000"   
+        "ItemShopTags"                  ""
+        // Recipe
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemRecipe"                    "1"
+        "ItemResult"                    "item_divine_barrage"
+        "ItemRequirements"
+        {
+            "01"                        "item_greater_crit;item_monkey_king_bar;"
+        }
+    }
+
+    //===============================================Divine Barrage================================================    
     "item_divine_barrage"
     {
-        "ID"                            "1001" // Уникальный ID предмета
         "BaseClass"                     "item_lua"
-        "ScriptFile"                    "items/divine_barrage.lua"
+        "ScriptFile"                    "items/item_divine_barrage.lua"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
         "AbilityTextureName"            "divine_barrage"
-        "ItemCost"                      "4200"
+        //"ItemCost"                      "4200"
         "ItemShopTags"                  "item_greater_crit;item_monkey_king_bar"
         "ItemQuality"                   "epic"
         "AbilitySpecial"
@@ -264,6 +285,16 @@
             {
                 "var_type"              "FIELD_INTEGER"
                 "crit_multiplier"       "300" // Множитель критического удара в процентах
+            }
+            "03"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "damage_bonus"          "150" // Бонус к урону
+            }            
+            "04"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "attack_speed_bonus"    "60" // Бонус к скорости атаки
             }
         }
     }

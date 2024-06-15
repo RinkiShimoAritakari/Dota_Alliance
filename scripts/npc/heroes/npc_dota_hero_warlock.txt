@@ -208,26 +208,27 @@
 		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"MaxLevel"						"1"
 		"FightRecapLevel"				"2"
 		"HasScepterUpgrade"			"1"
 		"AbilitySound"					"Hero_Warlock.RainOfChaos"
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastPoint"				"0.5 0.5 0.5"
+		"AbilityCastPoint"				"0.5"
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_4"
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"160"
+		"AbilityCooldown"				"100"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"200 400 600"		
+		"AbilityManaCost"				"200"		
 		
 		// Cast Range
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"900"
+		"AbilityCastRange"				"1500"
 
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
@@ -237,7 +238,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-			"golem_duration"			"60 60 60"
+			"golem_duration"			"80"
 			"stun_duration"				"0.8"
 			"aoe"						
 			{
@@ -246,14 +247,14 @@
 			}
 			"golem_hp"					
 			{
-				"value"					"1400 2300 3200"
+				"value"					"4000"
 			}
 
-			"golem_dmg"					"100 150 200"
-			"golem_armor"				"8 12 14"
-			"golem_movement_speed"		"320 340 360"
-			"golem_health_regen"		"25 50 75"
-			"golem_gold_bounty"			"100 150 200"			
+			"golem_dmg"					"200"
+			"golem_armor"				"50"
+			"golem_movement_speed"		"500"
+			"golem_health_regen"		"100"
+			"golem_gold_bounty"			"1000"			
 			"stun_delay"				"0.5"
 			"number_of_golems_scepter"
 			{
@@ -262,35 +263,35 @@
 			}
 			"golem_hp_scepter"
 			{
-				"value"			"1400 2300 3200"
+				"value"			"6000"
 				"RequiresScepter"		"1"
 			}
 			"golem_dmg_scepter"
 			{
-				"value"				"80 120 160"
+				"value"				"300"
 				"RequiresScepter"		"1"
 			}
 			"golem_gold_bounty_scepter"
 			{
-				"value"					"100 150 200"
+				"value"					"2000"
 				"RequiresScepter"		"1"
 			}
 			"bonus_magic_resistance"
 			{
-				"value"			"0"
+				"value"			"20"
 				"special_bonus_unique_warlock_1"		"+80"
 			}
 			"bonus_armor"
 			{
-				"value"			"0"
+				"value"			"20"
 				"special_bonus_unique_warlock_2"		"+20"
 			}
 			"tooltip_golem_armor"
 			{
-				"value"			"8 12 14"
+				"value"			"60"
 				"special_bonus_unique_warlock_2"		"+20"
 			}
-			"bonus_slow_resistance"			"60"
+			"bonus_slow_resistance"			"80"
 
 			"tooltip_manahealthboost"
 			{
@@ -317,11 +318,11 @@
 		{
 			"damage"
 			{
-				"value" "40 50 60"
+				"value" "100"
 			}
 			"radius"
 			{
-				"value" "300 300 300"
+				"value" "500"
 				"affected_by_aoe_increase"	"1"
 			}
 		}
@@ -346,10 +347,10 @@
 		{
 			"aura_radius"				
 			{
-				"value"		"300"
+				"value"		"500"
 				"affected_by_aoe_increase"	"1"
 			}
-			"aura_damage"				"30 50 70"
+			"aura_damage"				"100"
 
 			"health_bonus_pct"			"0"
 			"share_damage"				"0"
