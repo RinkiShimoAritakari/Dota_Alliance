@@ -26,6 +26,4 @@ function modifier_alliance_assassin_bonus:GetModifierPreAttack_CriticalStrike( p
         local critDmg = crit_damage + (crit_mult * agi)
         return critDmg
     end
-    print(rand)
-    print(critDmg)
 end

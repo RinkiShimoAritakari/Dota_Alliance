@@ -300,4 +300,110 @@
     }
 
 
+    //=============================================Glacial Aegis Cuirass===========================================
+    "item_recipe_glacial_aegis_cuirass"
+    {
+        "BaseClass"                     "item_datadriven"
+        "AbilityTextureName"            "recipe"
+
+        //-------------------------------------------------------------------------------------------------------------
+        
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCost"                      "1000"   
+        "ItemShopTags"                  ""
+        // Recipe
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemRecipe"                    "1"
+        "ItemResult"                    "item_glacial_aegis_cuirass"
+        "ItemRequirements"
+        {
+            "01"                        "item_shivas_guard;item_assault;"
+        }
+    }
+
+    //===============================================Glacial Aegis Cuirass============================================= 
+    "item_glacial_aegis_cuirass"
+    {
+        "BaseClass"                     "item_lua"
+        "ScriptFile"                    "items/item_glacial_aegis_cuirass.lua"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+        "AbilityCooldown"               "30"
+        "AbilityManaCost"               "100"
+
+        "AbilityTextureName"            "glacial_aegis_cuirass"
+        "ItemShopTags"                  "item_shivas_guard;item_assault"
+        "ItemQuality"                   "epic"
+        "AbilitySpecial"
+	    {
+	        "01"
+	        {
+	            "var_type"              "FIELD_INTEGER"
+	            "bonus_armor"           "25"
+	        }
+	        "02"
+	        {
+	            "var_type"              "FIELD_INTEGER"
+	            "attack_speed_bonus"    "60"
+	        }
+	        "03"
+	        {
+	            "var_type"              "FIELD_INTEGER"
+	            "aura_armor_bonus"      "5"
+	        }
+	        "04"
+	        {
+	            "var_type"              "FIELD_INTEGER"
+	            "aura_armor_reduction"  "-5"
+	        }
+	        "05"
+	        {
+	            "var_type"              "FIELD_INTEGER"
+	            "blast_damage"          "200"
+	        }
+	        "06"
+	        {
+	            "var_type"              "FIELD_INTEGER"
+	            "blast_slow"            "-40"
+	        }
+	        "07"
+	        {
+	            "var_type"              "FIELD_INTEGER"
+	            "blast_radius"          "900"
+	        }
+	        "08"
+	        {
+	            "var_type"              "FIELD_INTEGER"
+	            "blast_duration"        "4"
+	        }
+	       	"09"
+	        {
+	            "var_type"              "FIELD_INTEGER"
+	            "bonus_stats"        	"10"
+	        }
+	       	"10"
+	        {
+	            "var_type"              "FIELD_INTEGER"
+	            "aura_radius"        	"1200"
+	        }
+   	       	"11"
+	        {
+	            "var_type"              "FIELD_INTEGER"
+	            "regen_reduction"       "-30"
+	        }
+	        "12"
+	        {
+	            "var_type"              "FIELD_INTEGER"
+	            "attack_speed_reduction" "-60"
+	        }
+  	        "13"
+	        {
+	            "var_type"              "FIELD_INTEGER"
+	            "magic_resistance_reduction" "-20"
+	        }
+	    }
+	}
+
+	
 }
