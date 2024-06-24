@@ -583,6 +583,104 @@
         }
     }
 
+    //===============================================Ring of Aquila=============================================
+    "item_ring_of_aquila"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE"
+        "AbilityCastRange"              "1200"
 
-	
+        "Model"                         "models/props_gameplay/neutral_box.vmdl"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCost"                      "750"
+        "ItemShopTags"                  ""
+        "ItemAliases"                   "roa;ring of aquila"
+        "ItemShareability"              ""      
+        "ActiveDescriptionLine"         "2"
+        "ItemPurchasable"               "1"
+        "ShouldBeSuggested"             "1"
+        "ItemSellable"                  "1"
+        "ItemIsNeutralDrop"             "0"
+        "DisplayOverheadAlertOnReceived" "1"
+
+        // Sound
+        //-------------------------------------------------------------------------------------------------------------         
+        "UIPickupSound"                 "Item.PickUpRingShop"
+        "UIDropSound"                   "Item.DropRingShop"
+        "WorldDropSound"                "Item.DropRingWorld"
+        
+        // Special  
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+                "bonus_damage"          "3"
+                "bonus_strength"        "3"
+                "bonus_agility"         "9"
+                "bonus_intellect"       "3"
+                "aura_radius"           "1200"
+                "aura_mana_regen"       "1"
+                "aura_bonus_armor"      "2"
+        }       
+    }
+
+    //=============================================Butterfly 2===========================================
+    "item_recipe_butterfly_2"
+    {
+        "BaseClass"                     "item_datadriven"
+        "AbilityTextureName"            "recipe"
+
+        //-------------------------------------------------------------------------------------------------------------
+        
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCost"                      "0"   
+        "ItemShopTags"                  ""
+        // Recipe
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemRecipe"                    "1"
+        "ItemResult"                    "item_butterfly_2"
+        "ItemRequirements"
+        {
+            "01"                        "item_butterfly;item_eagle;"
+        }
+    }
+
+    //===============================================Butterfly 2=============================================
+	"item_butterfly_2"
+	{
+        "BaseClass"                     "item_lua"
+        "ScriptFile"                    "items/item_butterfly_2.lua"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        "AbilityTextureName"            "butterfly_2"
+        "ItemShopTags"                  "agi;evasion;attack_speed"
+        "ItemQuality"                   "epic"
+		"AbilitySpecial"
+		{
+	        "01"
+	        {
+	            "var_type"              "FIELD_INTEGER"
+	            "bonus_attack_speed"     "30"
+	        }
+	        "02"
+	        {
+	            "var_type"              "FIELD_INTEGER"
+	            "bonus_evasion"      	 "40"
+	        }
+	        "03"
+	        {
+	            "var_type"              "FIELD_INTEGER"
+	            "bonus_agi"      	 	 "70"
+	        }
+       	 	"04"
+	        {
+	            "var_type"              "FIELD_INTEGER"
+	            "bonus_damage"      	 	 "70"
+	        }
+	        
+	    }
+	}
 }
