@@ -75,7 +75,7 @@
 		}
 	}
 
-	//======================================================Alchemist + Bounty Hunter=============================================
+	//======================================================Alchemist + Bounty Hunter========================================
     "alchemist_hand_of_midas"
     {	
     	"ID"								"8703"
@@ -422,6 +422,54 @@
 		"AbilityValues"
         {
             "agility_per_stack"     				"1.4 1.6 1.8 2"
+        }
+    }
+
+	//======================================================Warlock========================================
+    "alliance_warlock_bonus"
+    {	
+    	"ID"							"8718"
+        "BaseClass"                     "ability_lua"
+        "ScriptFile" 					"abilities/alliance_warlock_bonus"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE "
+
+		"AbilityTexturename"			"alliance_warlock_bonus"
+
+		"MaxLevel"						"5"
+		//"Innate"                        "1"
+		"RequiredLevel"                 "1"
+
+		"AbilityValues"
+        {
+            "magic_vampirism_heal"     				"20 40 60 80 100"
+            "vampirism_heal"     				"10 20 30 50 70"
+        }
+    }
+
+	//======================================================Gods========================================
+    "alliance_gods_bonus"
+    {	
+    	"ID"							"8719"
+        "BaseClass"                     "ability_lua"
+        "ScriptFile" 					"abilities/alliance_gods_bonus"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+	
+		"AbilityTexturename"			"alliance_gods_bonus"
+
+		"MaxLevel"						"3"
+		//"Innate"                        "1"
+		"RequiredLevel"                 "1"
+
+		"AbilityValues"
+        {
+            "stats_bonus"     						"5 10 15"  // %
+            "magic_damage_bonus"     				"5 10 15"  // %
+            "damage_bonus"     						"5 10 15"  // %
+            "armor_bonus"     						"5 10 15"
+            "movespeed_bonus"     					"20" 
+            "atack_speed_bonus"     				"20" 
+            "heal_reg_bonus"     					"2"   // %
+            "mana_reg_bonus"     					"2"   // %
         }
     }
 

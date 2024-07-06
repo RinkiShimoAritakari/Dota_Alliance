@@ -29,6 +29,7 @@ count_spirits = 0
 count_assassin = 0
 count_brawny = 0
 count_DrW = 0       	--Drow_Ranger_Windranger_bonus
+count_gods = 0
 
 
 
@@ -102,6 +103,9 @@ function CAddonTemplateGameMode:Bonus_Alliance(keys)
 			if hero_name == "npc_dota_hero_axe" or hero_name == "npc_dota_hero_centaur" or hero_name == "npc_dota_hero_disruptor" or hero_name == "npc_dota_hero_snapfire" or hero_name == "npc_dota_hero_juggernaut" or hero_name == "npc_dota_hero_beastmaster" or hero_name == "npc_dota_hero_bristleback" then
 				count_brawny = count_brawny + 1
 			end
+			if hero_name == "npc_dota_hero_mars" or hero_name == "npc_dota_hero_dawnbreaker" or hero_name == "npc_dota_hero_zuus" then
+				count_gods = count_gods + 1
+			end
 
 		end
 	end
@@ -150,6 +154,9 @@ function CAddonTemplateGameMode:Bonus_Alliance(keys)
 					hero:FindAbilityByName("alliance_brawny_bonus"):SetLevel(count_brawny)
 				end
 			end
+			if hero_name == "npc_dota_hero_mars" or hero_name == "npc_dota_hero_dawnbreaker" or hero_name == "npc_dota_hero_zuus" then
+				hero:FindAbilityByName("alliance_gods_bonus"):SetLevel(count_gods)
+			end
 
 			-- Кто один в Альянсе
 			if hero_name == "npc_dota_hero_legion_commander" then
@@ -158,7 +165,6 @@ function CAddonTemplateGameMode:Bonus_Alliance(keys)
 			if hero_name == "npc_dota_hero_warlock" then
 				hero:FindAbilityByName("alliance_warlock_supremacy_bonus"):SetLevel(1)
 			end
-
 
 		end
 	end

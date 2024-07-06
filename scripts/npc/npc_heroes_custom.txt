@@ -71,6 +71,16 @@
 		"Ability9"					"attribute_switch_ability"	
 	}
 
+	"npc_dota_hero_mars"
+	{	
+		"Ability9"					"alliance_gods_bonus"	
+	}
+	
+	"npc_dota_hero_dawnbreaker"
+	{	
+		"Ability9"					"alliance_gods_bonus"	
+	}
+
 	//=================================================================================================================	
 	// Ловкость
 	//=================================================================================================================
@@ -156,6 +166,11 @@
 		"Ability9"					"attribute_switch_ability"	
 	}
 
+	"npc_dota_hero_nevermore"
+	{												
+		"Ability9"					"alliance_warlock_bonus"
+	}
+
 
 	//=================================================================================================================	
 	// Интелект
@@ -178,6 +193,7 @@
 
 	"npc_dota_hero_warlock"
 	{												
+		"Ability8"					"alliance_warlock_bonus"	
 		"Ability9"					"alliance_warlock_supremacy_bonus"	
 	}
 
@@ -195,6 +211,10 @@
 	{	
 		"Ability8"					"alliance_instant_teleport_to_ally"
 		"Ability9"					"attribute_switch_ability"
+	}
+	"npc_dota_hero_zuus"
+	{	
+		"Ability9"					"alliance_gods_bonus"
 	}
 
 

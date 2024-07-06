@@ -683,4 +683,68 @@
 	        
 	    }
 	}
+
+    //=============================================Heart of Tarrasque 2===========================================
+    "item_recipe_heart_of_tarrasque_2"
+    {
+        "BaseClass"                     "item_datadriven"
+        "AbilityTextureName"            "recipe"
+
+        //-------------------------------------------------------------------------------------------------------------
+        
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCost"                      "0"   
+        "ItemShopTags"                  ""
+        // Recipe
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemRecipe"                    "1"
+        "ItemResult"                    "item_heart_of_tarrasque_2"
+        "ItemRequirements"
+        {
+            "01"                        "item_heart;item_reaver;"
+        }
+    }
+
+    //===============================================Heart of Tarrasque 2=============================================
+	"item_heart_of_tarrasque_2"
+	{
+	    // Базовые свойства
+	    "BaseClass"                 "item_lua"
+        "ScriptFile"                "items/item_heart_of_tarrasque_2.lua"
+	    "AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	    "AbilityTextureName"        "heart_of_tarrasque_2"
+
+	    // Информация о предмете
+	    "ItemShopTags"              "health;regen"  // Теги для поиска в магазине
+	    "ItemQuality"               "legendary"  // Качество предмета
+	    "ItemAliases"               "hot2"  // Алиасы предмета
+	    "ItemSellable"              "1"  // Можно ли продать
+	    "ItemPurchasable"           "1"  // Можно ли купить
+	    "ItemShareability"          "ITEM_FULLY_SHAREABLE"  // Уровень делимости предмета
+	    "ItemDisassembleRule"       "DOTA_ITEM_DISASSEMBLE_ALWAYS"  // Правила разборки предмета
+
+	    // Специальные свойства
+	    "AbilitySpecial"
+	    {
+	        "01"
+	        {
+	            "var_type"          "FIELD_INTEGER"
+	            "bonus_health"      "500"  // Бонус к здоровью
+	        }
+	        "02"
+	        {
+	            "var_type"          "FIELD_FLOAT"
+	            "health_regen_pct"  "2.5"  	// Процентное восстановление здоровья
+	        }	        
+	        "03"
+	        {
+	            "var_type"          "FIELD_FLOAT"
+	            "bonus_str"  		"70" 	// Бонус к силе
+	        }
+	    }
+	}
+
+
+
 }
