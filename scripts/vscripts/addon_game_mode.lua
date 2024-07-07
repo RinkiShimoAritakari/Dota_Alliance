@@ -30,13 +30,14 @@ count_assassin = 0
 count_brawny = 0
 count_DrW = 0       	--Drow_Ranger_Windranger_bonus
 count_gods = 0
+count_mage = 0
 
 
 
 function CAddonTemplateGameMode:InitGameMode()
 	-- GameRules:SetCustomGameTeamMaxPlayer(DOTA_TEAM_GOODGUYS)
 
-	GameRules:SetStartingGold(90000)
+	GameRules:SetStartingGold(1000)
 	GameRules:SetUseUniversalShopMode(true)
 	GameRules:SetPreGameTime(5)
 	GameRules:SetGoldTickTime(0.1)
@@ -106,6 +107,9 @@ function CAddonTemplateGameMode:Bonus_Alliance(keys)
 			if hero_name == "npc_dota_hero_mars" or hero_name == "npc_dota_hero_dawnbreaker" or hero_name == "npc_dota_hero_zuus" then
 				count_gods = count_gods + 1
 			end
+			if hero_name == "npc_dota_hero_lina" or hero_name == "npc_dota_hero_puck" or hero_name == "npc_dota_hero_lion" or hero_name == "npc_dota_hero_batrider" or hero_name == "npc_dota_hero_leshrac" or hero_name == "npc_dota_hero_nyx_assassin" or hero_name == "npc_dota_hero_skywrath_mage" or hero_name == "npc_dota_hero_winter_wyvern" or hero_name == "npc_dota_hero_venomancer" or hero_name == "npc_dota_hero_phoenix" or hero_name == "npc_dota_hero_jakiro" or hero_name == "npc_dota_hero_dark_willow" or hero_name == "npc_dota_hero_razor" or hero_name == "npc_dota_hero_crystal_maiden" then
+				count_mage = count_mage + 1
+			end
 
 		end
 	end
@@ -156,6 +160,13 @@ function CAddonTemplateGameMode:Bonus_Alliance(keys)
 			end
 			if hero_name == "npc_dota_hero_mars" or hero_name == "npc_dota_hero_dawnbreaker" or hero_name == "npc_dota_hero_zuus" then
 				hero:FindAbilityByName("alliance_gods_bonus"):SetLevel(count_gods)
+			end
+			if hero_name == "npc_dota_hero_lina" or hero_name == "npc_dota_hero_puck" or hero_name == "npc_dota_hero_lion" or hero_name == "npc_dota_hero_batrider" or hero_name == "npc_dota_hero_leshrac" or hero_name == "npc_dota_hero_nyx_assassin" or hero_name == "npc_dota_hero_skywrath_mage" or hero_name == "npc_dota_hero_winter_wyvern" or hero_name == "npc_dota_hero_venomancer" or hero_name == "npc_dota_hero_phoenix" or hero_name == "npc_dota_hero_jakiro" or hero_name == "npc_dota_hero_dark_willow" or hero_name == "npc_dota_hero_razor" or hero_name == "npc_dota_hero_crystal_maiden" then
+				if count_mage > 5 then
+					hero:FindAbilityByName("alliance_mage_bonus"):SetLevel(5)
+				else
+					hero:FindAbilityByName("alliance_mage_bonus"):SetLevel(count_mage)
+				end
 			end
 
 			-- Кто один в Альянсе

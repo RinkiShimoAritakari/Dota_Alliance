@@ -327,15 +327,15 @@
 		//"Innate"                        "1"
 		"RequiredLevel"                 "1"
 
-		"AbilityCastRange"				"700 850 1000"
+		"AbilityCastRange"				"1500 2000 4000"
         "AbilityManaCost"               "70 150 200"
         "AbilityCooldown"               "30"
 
 		"AbilityValues"
 		{			
-			"duration"									"15"
-			"attack_speed_bonus"						"30 65 110"
-			"armor_bonus"								"5 10 15"
+			"duration"									"15 30 60"
+			"attack_speed_bonus"						"30 65 150"
+			"armor_bonus"								"5 15 40"
 		}
     }
 

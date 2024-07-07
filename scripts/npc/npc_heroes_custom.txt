@@ -71,15 +71,6 @@
 		"Ability9"					"attribute_switch_ability"	
 	}
 
-	"npc_dota_hero_mars"
-	{	
-		"Ability9"					"alliance_gods_bonus"	
-	}
-	
-	"npc_dota_hero_dawnbreaker"
-	{	
-		"Ability9"					"alliance_gods_bonus"	
-	}
 
 	//=================================================================================================================	
 	// Ловкость
@@ -166,9 +157,9 @@
 		"Ability9"					"attribute_switch_ability"	
 	}
 
-	"npc_dota_hero_nevermore"
+	"npc_dota_hero_razor"
 	{												
-		"Ability9"					"alliance_warlock_bonus"
+		"Ability9"					"alliance_mage_bonus"	
 	}
 
 
@@ -192,8 +183,7 @@
 	}
 
 	"npc_dota_hero_warlock"
-	{												
-		"Ability8"					"alliance_warlock_bonus"	
+	{													
 		"Ability9"					"alliance_warlock_supremacy_bonus"	
 	}
 
@@ -212,9 +202,40 @@
 		"Ability8"					"alliance_instant_teleport_to_ally"
 		"Ability9"					"attribute_switch_ability"
 	}
-	"npc_dota_hero_zuus"
+
+	"npc_dota_hero_lina"
 	{	
-		"Ability9"					"alliance_gods_bonus"
+		"Ability9"					"alliance_mage_bonus"
+	}
+
+	"npc_dota_hero_puck"
+	{	
+		"Ability9"					"alliance_mage_bonus"
+	}
+
+	"npc_dota_hero_lion"
+	{	
+		"Ability9"					"alliance_mage_bonus"
+	}
+
+	"npc_dota_hero_leshrac"
+	{	
+		"Ability9"					"alliance_mage_bonus"
+	}
+
+	"npc_dota_hero_skywrath_mage"
+	{	
+		"Ability9"					"alliance_mage_bonus"
+	}
+
+	"npc_dota_hero_jakiro"
+	{	
+		"Ability9"					"alliance_mage_bonus"
+	}
+
+	"npc_dota_hero_crystal_maiden"
+	{	
+		"Ability9"					"alliance_mage_bonus"
 	}
 
 
@@ -246,6 +267,36 @@
 	{	
 		"Ability8"					"alliance_instant_teleport_to_ally"
 		"Ability9"					"attribute_switch_ability"
+	}
+	
+	"npc_dota_hero_batrider"
+	{	
+		"Ability9"					"alliance_mage_bonus"
+	}
+	
+	"npc_dota_hero_nyx_assassin"
+	{	
+		"Ability9"					"alliance_mage_bonus"
+	}
+	
+	"npc_dota_hero_winter_wyvern"
+	{	
+		"Ability9"					"alliance_mage_bonus"
+	}
+		
+	"npc_dota_hero_venomancer"
+	{	
+		"Ability9"					"alliance_mage_bonus"
+	}
+			
+	"npc_dota_hero_phoenix"
+	{	
+		"Ability9"					"alliance_mage_bonus"
+	}
+			
+	"npc_dota_hero_dark_willow"
+	{	
+		"Ability9"					"alliance_mage_bonus"
 	}
 	
 }
