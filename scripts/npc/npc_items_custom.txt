@@ -274,28 +274,12 @@
         //"ItemCost"                      "4200"
         "ItemShopTags"                  "item_greater_crit;item_monkey_king_bar"
         "ItemQuality"                   "epic"
-        "AbilitySpecial"
+        "AbilityValues"
         {
-            "01"
-            {
-                "var_type"              "FIELD_INTEGER"
-                "crit_chance"           "25" // Шанс критического удара в процентах
-            }
-            "02"
-            {
-                "var_type"              "FIELD_INTEGER"
-                "crit_multiplier"       "300" // Множитель критического удара в процентах
-            }
-            "03"
-            {
-                "var_type"              "FIELD_INTEGER"
-                "damage_bonus"          "150" // Бонус к урону
-            }            
-            "04"
-            {
-                "var_type"              "FIELD_INTEGER"
-                "attack_speed_bonus"    "60" // Бонус к скорости атаки
-            }
+            "crit_chance"           "25" // Шанс критического удара в процентах
+            "crit_multiplier"       "300" // Множитель критического удара в процентах
+            "damage_bonus"          "150" // Бонус к урону
+            "attack_speed_bonus"    "60" // Бонус к скорости атаки
         }
     }
 
@@ -335,73 +319,23 @@
         "AbilityTextureName"            "glacial_aegis_cuirass"
         "ItemShopTags"                  "item_shivas_guard;item_assault"
         "ItemQuality"                   "epic"
-        "AbilitySpecial"
+        "AbilityValues"
 	    {
-	        "01"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "bonus_armor"           "25"
-	        }
-	        "02"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "attack_speed_bonus"    "60"
-	        }
-	        "03"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "aura_armor_bonus"      "5"
-	        }
-	        "04"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "aura_armor_reduction"  "-5"
-	        }
-	        "05"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "blast_damage"          "200"
-	        }
-	        "06"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "blast_slow"            "-40"
-	        }
-	        "07"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "blast_radius"          "900"
-	        }
-	        "08"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "blast_duration"        "4"
-	        }
-	       	"09"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "bonus_stats"        	"10"
-	        }
-	       	"10"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "aura_radius"        	"1200"
-	        }
-   	       	"11"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "regen_reduction"       "-30"
-	        }
-	        "12"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "attack_speed_reduction" "-60"
-	        }
-  	        "13"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "magic_resistance_reduction" "-20"
-	        }
+
+            "bonus_armor"           "25"
+            "attack_speed_bonus"    "60"
+            "aura_armor_bonus"      "5"
+            "aura_armor_reduction"  "-5"
+            "blast_damage"          "200"
+            "blast_slow"            "-40"
+            "blast_radius"          "900"
+            "blast_duration"        "4"
+            "bonus_stats"        	"10"
+            "aura_radius"        	"1200"
+            "regen_reduction"       "-30"
+            "attack_speed_reduction" "-60"
+            "magic_resistance_reduction" "-20"
+
 	    }
 	}
 
@@ -438,39 +372,14 @@
         "AbilityTextureName"            "octarine_core_2"
         "ItemShopTags"                  "int;hard_to_tag"
         "ItemQuality"                   "epic"
-        "AbilitySpecial"
+        "AbilityValues"
 	    {
-	        "01"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "cooldown_reduction"      "40"
-	        }
-			"02"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "bonus_health"           "1000"
-	        }
-  			"03"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "bonus_mana"             "1000"
-	        }
- 			"04"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "bonus_mana_regen"       "12"
-	        }
-	        "05"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "bonus_hp_regen"       	 "36"
-	        }
-   	        "06"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "bonus_stats"       	 "10"
-	        }
-	        
+            "cooldown_reduction"      "40"
+            "bonus_health"           "1000"
+            "bonus_mana"             "1000"
+            "bonus_mana_regen"       "12"
+            "bonus_hp_regen"       	 "36"
+            "bonus_stats"       	 "10"
 	    }
 	}
 
@@ -651,37 +560,24 @@
     //===============================================Butterfly 2=============================================
 	"item_butterfly_2"
 	{
-        "BaseClass"                     "item_lua"
-        "ScriptFile"                    "items/item_butterfly_2.lua"
+        "BaseClass"                     "item_butterfly"
+        //"ScriptFile"                    "items/item_butterfly_2.lua"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
         "AbilityTextureName"            "butterfly_2"
-        "ItemShopTags"                  "agi;evasion;attack_speed"
+        "ItemShopTags"                  "agi;damage;evasion;attack_speed"
         "ItemQuality"                   "epic"
-		"AbilitySpecial"
+		"ItemAliases"					"bfly;butterfly"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"1"
+
+		"AbilityValues"
 		{
-	        "01"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "bonus_attack_speed"     "30"
-	        }
-	        "02"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "bonus_evasion"      	 "40"
-	        }
-	        "03"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "bonus_agi"      	 	 "70"
-	        }
-       	 	"04"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "bonus_damage"      	 	 "70"
-	        }
-	        
-	    }
+			"bonus_agility"				"70"
+			"bonus_evasion"				"40"
+			"bonus_attack_speed_pct"	"30"
+			"bonus_damage"				"50"
+		}
 	}
 
     //=============================================Heart of Tarrasque 2===========================================
@@ -694,7 +590,7 @@
         
         // Item Info
         //-------------------------------------------------------------------------------------------------------------
-        "ItemCost"                      "0"   
+        "ItemCost"                      "250"   
         "ItemShopTags"                  ""
         // Recipe
         //-------------------------------------------------------------------------------------------------------------
@@ -710,40 +606,116 @@
 	"item_heart_of_tarrasque_2"
 	{
 	    // Базовые свойства
-	    "BaseClass"                 "item_lua"
-        "ScriptFile"                "items/item_heart_of_tarrasque_2.lua"
+	    "BaseClass"                 "item_heart"
+        //"ScriptFile"                "items/item_heart_of_tarrasque_2.lua"
 	    "AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_PASSIVE"
 	    "AbilityTextureName"        "heart_of_tarrasque_2"
 
 	    // Информация о предмете
-	    "ItemShopTags"              "health;regen"  // Теги для поиска в магазине
-	    "ItemQuality"               "legendary"  // Качество предмета
-	    "ItemAliases"               "hot2"  // Алиасы предмета
-	    "ItemSellable"              "1"  // Можно ли продать
-	    "ItemPurchasable"           "1"  // Можно ли купить
-	    "ItemShareability"          "ITEM_FULLY_SHAREABLE"  // Уровень делимости предмета
-	    "ItemDisassembleRule"       "DOTA_ITEM_DISASSEMBLE_ALWAYS"  // Правила разборки предмета
+		"ItemShopTags"					"str;regen_health;health_pool"
+		"ItemQuality"					"epic"
+		"ItemAliases"					"hot;heart of tarrasque"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"1"
 
 	    // Специальные свойства
-	    "AbilitySpecial"
-	    {
-	        "01"
-	        {
-	            "var_type"          "FIELD_INTEGER"
-	            "bonus_health"      "500"  // Бонус к здоровью
-	        }
-	        "02"
-	        {
-	            "var_type"          "FIELD_FLOAT"
-	            "health_regen_pct"  "2.5"  	// Процентное восстановление здоровья
-	        }	        
-	        "03"
-	        {
-	            "var_type"          "FIELD_FLOAT"
-	            "bonus_str"  		"70" 	// Бонус к силе
-	        }
-	    }
+		"AbilityValues"
+		{
+			"bonus_strength"		"70"
+			"health_regen_pct"		"2.5"
+		}
 	}
+
+    //=============================================Giant's Ring===========================================
+    "item_giants_ring"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+        
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCost"                      "5200"
+
+        "ItemShareability"              ""      
+        "ActiveDescriptionLine"         "2"
+        "ItemPurchasable"               "1"
+        "ShouldBeSuggested"             "1"
+        "ItemSellable"                  "1"
+        "ItemIsNeutralDrop"             "0"
+        "DisplayOverheadAlertOnReceived" "1"
+
+
+        "Model"                         "models/props_gameplay/neutral_box.vmdl"
+        
+        // Special  
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+                "bonus_strength"            		"30"
+                "movement_speed"            		"45"
+                "model_scale"           			"60"
+                "pct_str_damage_per_second"         "100"
+                "damage_radius"         			"100"
+        }
+    }
+
+    //=============================================Giant's Ring 2===========================================
+    "item_recipe_giants_ring_2"
+    {
+        "BaseClass"                     "item_datadriven"
+        "AbilityTextureName"            "recipe"
+
+        //-------------------------------------------------------------------------------------------------------------
+        
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCost"                      "0"   
+        "ItemShopTags"                  ""
+        // Recipe
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemRecipe"                    "1"
+        "ItemResult"                    "item_giants_ring_2"
+        "ItemRequirements"
+        {
+            "01"                        "item_giants_ring;item_reaver;item_reaver;"
+        }
+    }
+
+    //===============================================Giant's Ring 2=============================================
+	"item_giants_ring_2"
+	{
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+	    "BaseClass"                 	"item_giants_ring"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+
+        "AbilityTextureName"            "giants_ring_2"
+        
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemIsNeutralDrop"             "0"
+        "ItemPurchasable"               "1"
+        "ItemSellable"              "1"
+
+
+        "Model"                         "models/props_gameplay/neutral_box.vmdl"
+        
+        // Special  
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+                "bonus_strength"            		"100"
+                "movement_speed"            		"60"
+                "model_scale"           			"120"
+                "pct_str_damage_per_second"         "150"
+                "damage_radius"         			"200"
+        }
+    }
 
 
 

@@ -3,6 +3,7 @@
 	// =======================================================Сила======================================================
 
 	"npc_dota_hero_alchemist"          		  "1"
+	"npc_dota_hero_skeleton_king"          	  "1"
 	"npc_dota_hero_axe"          	 		  "1"
 	"npc_dota_hero_legion_commander"          "1"
 	"npc_dota_hero_slardar"          		  "1"
@@ -15,8 +16,9 @@
 	"npc_dota_hero_centaur"          	  	  "1"
 	"npc_dota_hero_beastmaster"          	  "1"
 	"npc_dota_hero_bristleback"          	  "1"
-	//"npc_dota_hero_mars"          	  		  "1"
-	//"npc_dota_hero_dawnbreaker"          	  "1"
+	"npc_dota_hero_mars"          	  		  "1"
+	"npc_dota_hero_dawnbreaker"          	  "1"
+	"//npc_dota_hero_spirit_breaker"            "1"
 	
 
 	// =======================================================Ловкость======================================================
@@ -38,6 +40,12 @@
 	"npc_dota_hero_ember_spirit"          	  "1"
 	//"npc_dota_hero_nevermore"          	 	  "1"
 	"npc_dota_hero_razor"          	 	  	  "1"
+	"npc_dota_hero_naga_siren"          	  "0"
+	"npc_dota_hero_ursa"          	  		  "1"
+	"npc_dota_hero_gyrocopter"          	  "1"
+	"npc_dota_hero_sniper"          	  	  "1"
+	"npc_dota_hero_hoodwink"          	  	  "1"
+	"npc_dota_hero_luna"          	  	  	  "1"
 
 
 	// =======================================================Интелект======================================================
@@ -47,7 +55,7 @@
 	"npc_dota_hero_silencer"        	      "1"
 	"npc_dota_hero_warlock"        	      	  "1"
 	"npc_dota_hero_lich"        	      	  "1"
-	//"npc_dota_hero_zuus"        	      	  "1"
+	"npc_dota_hero_zuus"        	      	  "1"
 	"npc_dota_hero_storm_spirit"        	  "1"
 	"npc_dota_hero_disruptor"        	  	  "1"
 	"npc_dota_hero_skywrath_mage"        	  "1"
@@ -57,6 +65,8 @@
 	"npc_dota_hero_leshrac"        	  		  "1"
 	"npc_dota_hero_jakiro"        	  		  "1"
 	"npc_dota_hero_crystal_maiden"        	  "1"
+	"npc_dota_hero_ringmaster"        	  	  "1"
+	"npc_dota_hero_tinker"        	  	 	  "1"
 	
 
 	// =======================================================Универсал======================================================
@@ -74,4 +84,9 @@
 	"npc_dota_hero_venomancer"        	  	  "1"
 	"npc_dota_hero_phoenix"        	  	  	  "1"
 	"npc_dota_hero_dark_willow"        	  	  "1"
+	"npc_dota_hero_techies"        	  	  	  "1"
+	"npc_dota_hero_lycan"        	  	  	  "1"
+	"npc_dota_hero_rattletrap"        	  	  "1"
+	"npc_dota_hero_mirana"          	  	  "1"
+
 }

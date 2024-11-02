@@ -10,6 +10,22 @@ LinkLuaModifier("modifier_item_heart_of_tarrasque_2", "items/item_heart_of_tarra
 
 modifier_item_heart_of_tarrasque_2 = class({})
 
+function modifier_item_heart_of_tarrasque_2:OnCreated(kv)
+	if IsServer() then
+		self.bonus_health = self:GetAbility():GetSpecialValueFor("bonus_health")
+		self.health_regen_pct = self:GetAbility():GetSpecialValueFor("health_regen_pct")
+		self.bonus_str = self:GetAbility():GetSpecialValueFor("bonus_str")
+	end
+end
+
+function modifier_item_heart_of_tarrasque_2:OnRefresh(kv)
+	if IsServer() then
+		self.bonus_health = self:GetAbility():GetSpecialValueFor("bonus_health")
+		self.health_regen_pct = self:GetAbility():GetSpecialValueFor("health_regen_pct")
+		self.bonus_str = self:GetAbility():GetSpecialValueFor("bonus_str")
+	end
+end
+
 function modifier_item_heart_of_tarrasque_2:IsHidden()
 	return true
 end
@@ -28,16 +44,16 @@ function modifier_item_heart_of_tarrasque_2:DeclareFunctions()
 end
 
 function modifier_item_heart_of_tarrasque_2:GetModifierHealthBonus()
-	local bonus_health = self:GetAbility():GetSpecialValueFor("bonus_health")
-	return bonus_health 
+	-- local bonus_health = self:GetAbility():GetSpecialValueFor("bonus_health")
+	return self.bonus_health 
 end
 
 function modifier_item_heart_of_tarrasque_2:GetModifierHealthRegenPercentage()
-	local health_regen_pct = self:GetAbility():GetSpecialValueFor("health_regen_pct")
-	return health_regen_pct 
+	-- local health_regen_pct = self:GetAbility():GetSpecialValueFor("health_regen_pct")
+	return self.health_regen_pct 
 end
 
 function modifier_item_heart_of_tarrasque_2:GetModifierBonusStats_Strength()
-	local bonus_str = self:GetAbility():GetSpecialValueFor("bonus_str")
-	return bonus_str 
+	-- local bonus_str = self:GetAbility():GetSpecialValueFor("bonus_str")
+	return self.bonus_str 
 end

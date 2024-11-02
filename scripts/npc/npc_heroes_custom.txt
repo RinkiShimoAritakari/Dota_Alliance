@@ -6,12 +6,18 @@
 
 	"npc_dota_hero_alchemist"
 	{	
+		"Ability8"					"Alliance_Forester_bonus"
 		"Ability9"					"alchemist_hand_of_midas"
 	}
 
 	"npc_dota_hero_axe"
 	{	
 		"Ability9"					"alliance_brawny_bonus"
+	}
+
+	"npc_dota_hero_skeleton_king"
+	{	
+		"Ability8"					"Alliance_Forester_bonus"
 	}
 
 	"npc_dota_hero_centaur"
@@ -71,6 +77,26 @@
 		"Ability9"					"attribute_switch_ability"	
 	}
 
+	"npc_dota_hero_shredder"
+	{	
+		"Ability9"					"alliance_mechanic_bonus"	
+	}
+
+	"npc_dota_hero_mars"
+	{	
+		"Ability9"					"alliance_gods_bonus"	
+	}
+
+	"npc_dota_hero_dawnbreaker"
+	{	
+		"Ability9"					"alliance_gods_bonus"	
+	}
+
+	"npc_dota_hero_spirit_breaker"
+	{	
+		"Ability9"					"diablo_dash"	
+	}
+
 
 	//=================================================================================================================	
 	// Ловкость
@@ -80,12 +106,16 @@
 	"npc_dota_hero_drow_ranger"
 	{				
 		"Ability4"					"drow_ranger_glacier"									
+		"Ability8"					"Alliance_Hunter_bonus"	
 		"Ability9"					"Drow_Ranger_Windranger_bonus"	
 	}
 
 	"npc_dota_hero_antimage"
 	{										
+		"Ability7"					"radiance_am"	
+		"Ability8"					"mana_empowerment"	
 		"Ability9"					"alliance_demon_hunter_bonus"	
+		"Ability10"					"Alliance_Forester_bonus"	
 	}
 
 	"npc_dota_hero_terrorblade"
@@ -116,6 +146,7 @@
 
 	"npc_dota_hero_phantom_assassin"
 	{												
+		"Ability8"					"Alliance_Forester_bonus"	
 		"Ability9"					"alliance_assassin_bonus"	
 	}
 
@@ -123,6 +154,7 @@
 	{												
 		"Ability8"					"alliance_brawny_bonus"	
 		"Ability9"					"alliance_assassin_bonus"	
+		"Ability10"					"Alliance_Forester_bonus"	
 	}
 
 	"npc_dota_hero_monkey_king"
@@ -162,6 +194,43 @@
 		"Ability9"					"alliance_mage_bonus"	
 	}
 
+	"npc_dota_hero_naga_siren"
+	{		
+
+		"Ability1"					"v1_revolver"	
+		"Ability2"					""	
+		"Ability3"					"v1_electric"	
+		"Ability4"					""	
+		"Ability5"					"v1_dash"	
+		"Ability6"					""	
+	}
+
+	"npc_dota_hero_ursa"
+	{		
+		"Ability9"					"alliance_circus"	
+	}
+
+	"npc_dota_hero_gyrocopter"
+	{		
+		"Ability9"					"alliance_mechanic_bonus"	
+	}
+
+	"npc_dota_hero_sniper"
+	{		
+		"Ability9"					"alliance_mechanic_bonus"	
+	}
+
+	"npc_dota_hero_luna"
+	{		
+		"Ability9"					"Alliance_Hunter_bonus"	
+	}
+
+
+	"npc_dota_hero_hoodwink"
+	{		
+		"Ability9"					"Alliance_Hunter_bonus"	
+	}
+
 
 	//=================================================================================================================	
 	// Интелект
@@ -184,7 +253,7 @@
 
 	"npc_dota_hero_warlock"
 	{													
-		"Ability9"					"alliance_warlock_supremacy_bonus"	
+		"Ability9"					"alliance_warlock_supremacy_bonus"
 	}
 
 	"npc_dota_hero_lich"
@@ -238,6 +307,21 @@
 		"Ability9"					"alliance_mage_bonus"
 	}
 
+	"npc_dota_hero_zuus"
+	{	
+		"Ability9"					"alliance_gods_bonus"
+	}
+
+	"npc_dota_hero_ringmaster"
+	{	
+		"Ability9"					"alliance_circus"
+	}
+
+	"npc_dota_hero_tinker"
+	{	
+		"Ability9"					"alliance_mechanic_bonus"
+	}
+
 
 	//=================================================================================================================
 	// Универсалы
@@ -245,6 +329,7 @@
 
 	"npc_dota_hero_windrunner"
 	{	
+		"Ability8"					"Alliance_Hunter_bonus"	
 		"Ability9"					"Drow_Ranger_Windranger_bonus"	
 	}
 
@@ -260,7 +345,8 @@
 
 	"npc_dota_hero_snapfire"
 	{	
-		"Ability9"					"alliance_brawny_bonus"	
+		"Ability9"					"alliance_brawny_bonus"
+		"Ability10"					"alliance_mechanic_bonus"
 	}
 
 	"npc_dota_hero_void_spirit"
@@ -297,6 +383,26 @@
 	"npc_dota_hero_dark_willow"
 	{	
 		"Ability9"					"alliance_mage_bonus"
+	}
+			
+	"npc_dota_hero_techies"
+	{	
+		"Ability9"					"alliance_mechanic_bonus"
+	}
+				
+	"npc_dota_hero_lycan"
+	{	
+		"Ability9"					"alliance_circus"
+	}
+					
+	"npc_dota_hero_rattletrap"
+	{	
+		"Ability9"					"alliance_mechanic_bonus"
+	}
+						
+	"npc_dota_hero_mirana"
+	{	
+		"Ability8"					"Alliance_Hunter_bonus"
 	}
 	
 }

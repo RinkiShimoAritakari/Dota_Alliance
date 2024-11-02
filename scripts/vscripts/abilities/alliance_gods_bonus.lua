@@ -33,20 +33,22 @@ function modifier_alliance_gods_bonus:DeclareFunctions()
 end
 
 function modifier_alliance_gods_bonus:GetModifierBonusStats_Strength()
-    str_base = self:GetCaster():GetStrengthGain()
-    print("str_base" + str_base)
+    str_base = self:GetParent():GetStrengthGain()
     stats_bonus = self:GetAbility():GetSpecialValueFor("stats_bonus")
-    return str_base + (stats_bonus/100)
+    str = str_base + (stats_bonus/100)
+    return str
 end
 
 function modifier_alliance_gods_bonus:GetModifierBonusStats_Agility()
+    agi_base = self:GetParent():GetAgilityGain()
     stats_bonus = self:GetAbility():GetSpecialValueFor("stats_bonus")
-    return stats_bonus
+    return agi_base + (stats_bonus/100)
 end
 
 function modifier_alliance_gods_bonus:GetModifierBonusStats_Intellect()
+    int_base = self:GetParent():GetIntellectGain()
     stats_bonus = self:GetAbility():GetSpecialValueFor("stats_bonus")
-    return stats_bonus
+    return int_base + (stats_bonus/100)
 end
 
 function modifier_alliance_gods_bonus:GetModifierBaseDamageOutgoing_Percentage()

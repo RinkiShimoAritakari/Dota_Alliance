@@ -55,7 +55,7 @@
 		"ID"							"8702"
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"abilities/Alliance_Forester_bonus"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 
@@ -214,7 +214,7 @@
 		}
 	}
 
-	//======================================================Warlock Supremacy====================================================
+	//======================================================Warlock Supremacy================================================
 	"alliance_warlock_supremacy_bonus"
 	{
 		"ID"							"8709"
@@ -425,27 +425,6 @@
         }
     }
 
-	//======================================================Warlock========================================
-    "alliance_warlock_bonus"
-    {	
-    	"ID"							"8718"
-        "BaseClass"                     "ability_lua"
-        "ScriptFile" 					"abilities/alliance_warlock_bonus"
-        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE "
-
-		"AbilityTexturename"			"alliance_warlock_bonus"
-
-		"MaxLevel"						"5"
-		//"Innate"                        "1"
-		"RequiredLevel"                 "1"
-
-		"AbilityValues"
-        {
-            "magic_vampirism_heal"     				"20 40 60 80 100"
-            "vampirism_heal"     				"10 20 30 50 70"
-        }
-    }
-
 	//======================================================Gods========================================
     "alliance_gods_bonus"
     {	
@@ -473,8 +452,185 @@
         }
     }
 
+	//======================================================Mechanic========================================
+	"alliance_mechanic_bonus"
+	{
+	    "ID"							"8720"
+	    "BaseClass"                     "ability_lua"
+	    "ScriptFile" 					"abilities/alliance_mechanic_bonus"
+	    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"	
 
+	    "AbilityTexturename"			"alliance_mechanic_bonus"
 
+	    "MaxLevel"						"5"
+	    // "Innate"                        "1"
+	    "RequiredLevel"                 "1"
+
+	    "AbilityValues"
+	    {
+	        "health_bonus"     						"0.2 0.4 0.6 0.8 1"
+	        "radius"     							"1000"
+	    }
+	}
+
+	//======================================================================================================
+	//=======================================================V1=============================================
+	//======================================================================================================
+	"v1_revolver"
+	{
+	    "ID"							"8721"
+	    "BaseClass"                     "ability_lua"
+	    "ScriptFile" 					"abilities/V1/v1_revolver"
+	    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_VECTOR_TARGETING | DOTA_ABILITY_BEHAVIOR_POINT"
+        "AbilityUnitTargetTeam" 		"DOTA_UNIT_TARGET_TEAM_ENEMY"
+        "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_TREE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastPoint"				"0.15"
+	    "AbilityCooldown" 				"10"
+		"AbilityManaCost"				"100 120 140 160"
+
+	    "AbilityTexturename"			"v1_piercer"
+
+	    "MaxLevel"						"1"
+	    // "Innate"                        "1"
+	    "RequiredLevel"                 "1"
+
+	    "AbilityValues"
+	    {	
+			"AbilityCastRange"						"1000"		
+	        "damage"     							"500"
+	        "agility_scaling"     					"2"
+			"speed"									"2000"
+			"radius"								"100"
+			"ricochet_radius_start"					"115"
+			"ricochet_radius_end"					"115"
+			"ricochet_distance_multiplier"			"1.5"
+			"ricochet_fear_duration"				"1.25 1.5 1.75 2.0"
+			"impact_slow_percent"					"-100"
+			"impact_slow_duration"					"0.5" 
+
+	    }
+	}
+
+	//------------------------------------------------------------------------------------------------------
+	"v1_dash"
+	{  
+	    "ID"              				"8722"
+	    "BaseClass"           			"ability_lua"
+	    "ScriptFile"           			"abilities/V1/v1_dash"
+	    "AbilityBehavior"         		"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+	    "AbilityCooldown"         		"10"
+	    "AbilityCastRange"				"1000"
+
+	    "AbilityTextureName"       		"v1_dash" 
+
+	    "AbilityValues"
+	    {
+	        "distance"     							"300"
+	    }
+	}
+
+	"v1_electric"
+	{
+	    "ID"              				"8723"
+	    "BaseClass"           			"ability_lua"
+	    "ScriptFile"           			"abilities/V1/v1_electric"
+	    "AbilityBehavior" 				"DOTA_ABILITY_BEHAVIOR_POINT"
+	    "AbilityDamageType" 			"DAMAGE_TYPE_PURE"
+
+	    "AbilityCastRange" 				"2000"
+
+	    "AbilityCooldown" 				"15"
+	    "AbilityManaCost" 				"100" 
+
+	    "AbilityValues"
+	    {
+	        "distance"     							"2000"
+	    }
+	}
+
+	//=======================================================Цирковые=============================================
+	"alliance_circus"
+	{
+	    "ID"              				"8724"
+	    "BaseClass"           			"ability_lua"
+	    "ScriptFile"           			"abilities/alliance_circus"
+	    "AbilityBehavior" 				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+
+	    "AbilityTextureName"       		"alliance_circus" 
+
+	    "MaxLevel"						"3"
+	    // "Innate"                        "1"
+	    "RequiredLevel"                 "1"
+
+	    "AbilityCooldown" 				"60"
+	    "AbilityManaCost" 				"300" 
+
+	    "AbilityValues"
+	    {
+	        "min_damage_bonus"     					"-500"
+	        "max_damage_bonus"     					"500"
+	        "min_health_bonus"     					"-500"
+	        "max_health_bonus"     					"2000"	        	        
+	        "min_gold_bonus"     					"-1000"
+	        "max_gold_bonus"     					"1000" 
+	    }
+	}
+
+	//=======================================================Радик на АМ=============================================
+	"radiance_am"
+	{
+	    "ID"              				"8725"
+	    "BaseClass"           			"ability_lua"
+	    "ScriptFile"           			"abilities/radiance_am"
+	    "AbilityBehavior" 				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+	    "AbilityTextureName"       		"radiance_am_inactive" 
+
+	    "MaxLevel"						"1"
+	    // "Innate"                        "1"
+	    "RequiredLevel"                 "1" 
+
+	    "AbilityValues"
+	    {
+	        "radius"     							"300"
+	        "damage_no_radiance"     				"60"
+	        "damage"     							"100"
+	        "bonus_damage"     						"40"
+	        "evasion"     							"15"
+	        "blind_pct"     						"20"
+	        "damage_op"     						"40"
+
+	    }
+	}
+
+	//=======================================================Анти Маг==========================================
+	"mana_empowerment"
+	{
+	    "ID"              				"8727"
+	    "BaseClass"           			"ability_lua"
+	    "ScriptFile"           			"abilities/mana_empowerment"
+	    "AbilityBehavior" 				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+	    "AbilityTextureName"       		"mana_empowerment" 
+
+		"AbilityCooldown" 				"60"
+
+	    "MaxLevel"						"1"
+	    // "Innate"                        "1"
+	    "RequiredLevel"                 "1" 
+
+	    "AbilityValues"
+	    {
+	        "duration"     							"5"
+	        "damage_multiplier"     				"0.2"
+	    }
+	}
 
 }
 

@@ -89,4 +89,16 @@
 			"XPGain"					"15"
 		}
 	}
+
+	"npc_dummy_unit"
+	{
+	    "BaseClass" "npc_dota_creep"
+	    "Model" "models/props_gameplay/creeps/creep_dummy.vmdl"  // Замените на модель, которую хотите использовать
+	    "Health" "1"
+	    "HealthBarOffset" "100"
+	    "Team" "DOTA_TEAM_NEUTRAL"
+	    "ArmorPhysical" "0"
+	    "AttackCapabilities" "DOTA_UNIT_CAP_NO_ATTACK"
+	}
+
 }
